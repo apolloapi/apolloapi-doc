@@ -50,9 +50,13 @@ Apollo.detectText('Phrase1', 'contains', 'UNKNOWN') # Text Analysis
 - Some **automate their personal lives** with Apollo by integrating against discord communities, or do other things. Checkout our [Features!](https://docs.apolloapi.io/docs/features)
 - Apollo can help you **quickly build trust** for hobby projects, communities or business
 
-[Let's try it!](https://docs.apolloapi.io/docs/api/quickstart)
+[Let's try the SDK I want to build automation pipelines on my own!](https://docs.apolloapi.io/docs/api/quickstart)
 
-...Self hosted user interface (UI) documentation coming soon.
+You probably want to experience our no-code user interface (UI) beta. We're building other tools as well, want to self-host? Reach out to adrian@apolloapi.io
+
+![selfhosted](https://uploads-ssl.webflow.com/640ca38ad086fde245b76c9d/6452c0d5028530251de7b764_Screenshot%202023-05-03%20at%204.15.01%20PM.png)
+
+I want to use your [no-code UI!](https://app.apolloapi.io)
 
 ## Neat, I would like to learn more
 
