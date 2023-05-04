@@ -34,7 +34,7 @@ Apollo.query("desc", "table", "column")
 from apollo.client import Apollo
 
 # Use our custom model to test building decisions
-Apollo.use("Apollo")
+Apollo.use("apollo", token="YOUR_API_TOKEN_HERE")
 
 # We support video, speech, image and text. Try text!
 Apollo.detectText("Phrase1", "contains", "Threats")

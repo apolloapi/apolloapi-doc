@@ -4,7 +4,7 @@
 
 ### Apollo API token
 
-Apollo API requires a Bearer authentication (also called token authentication) when interacting with the SDK or sending us content at `content/`. You can access to your API token on the settings page.
+Apollo API requires a Bearer authentication (also called token authentication) when interacting with the SDK or sending us content at `content/`. You can access to your API token on the [settings page](https://app.apolloapi.io).
 
 ![settings](https://uploads-ssl.webflow.com/640ca38ad086fde245b76c9d/6452b1456257dc496c179599_Screenshot%202023-05-03%20at%203.08.40%20PM.png)
 
