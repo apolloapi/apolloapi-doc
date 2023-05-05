@@ -20,7 +20,7 @@ To Authenticate your request from stripe to Apollo you'll need to grab your `acc
 
 1. Click your profile icon in the top right
 2. Hit profile
-3. Scroll all the way to the bottom where it says `Accounts`
+3. Scroll all the way to the bottom where it says `Accounts`.
 
 #### Grabbing your secret key
 
