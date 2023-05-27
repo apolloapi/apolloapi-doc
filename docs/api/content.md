@@ -44,7 +44,7 @@ data = {
   'sync': True # NOTE: only include this if you want the content processed synchronously [default]
 }
 response = requests.post(
-  'https://protegoapi.com/api/v1/content',
+  'https://api.apolloapi.com/api/v1/content',
   headers=headers,
   json=data
 )
