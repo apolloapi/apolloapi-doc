@@ -1,4 +1,4 @@
-# 📊 Text analysis
+# Text analysis
 
 Apollo gives access to a large number of text analysis and natural language processing engines from the best providers.
 
@@ -6,16 +6,16 @@ With Apollo, you can access to many NLP engines. For each of those engines, diff
 
 ## Subfeatures
 
-- Sentiment analysis: To extract sentiment in a given string of text. Sentiment analysis, also called "opinion mining", uses natural language processing, text analysis and computational linguistics to identify and detect subjective information from the input text.
-- Keyword extraction: (also known as keyword detection or keyword analysis) is a text analysis technique that consists of automatically extracting the most important words and expressions in a text.
-- Named Entity Recognition: (also called entity identification or entity extraction) is an information extraction technique that automatically identifies named entities in a text and classifies them into predefined categories.
-- Question answering: Given a question, a set of documents, and some examples, the API generates an answer to the question based on the information in the set of documents. This is useful for question-answering applications on sources of truth, like company documentation or a knowledge base.
-- Search: allows you to do a semantic search over a set of documents. This means that you can provide a query, such as a natural language question or a statement, and the provided documents will be scored and ranked based on how semantically related they are to the input query.
-- Summarization: is the process of reducing a text to a shorter form while keeping the most important information.
-- Syntax analysis: consists principally in highlighting the structure of a text.
-- Topic extraction: Topic analysis is a Natural Language Processing (NLP) technique that allows us to automatically extract meaning from text by identifying recurrent themes or topics.
-- Text generation: is a subfield of Natural Language Processing (NLP). It leverages knowledge in computational linguistics and artificial intelligence to automatically generate natural language texts, which can satisfy certain communicative requirements.
-- Anonymization: intent is privacy protection. It is the process of removing personally identifiable information from text so that the people described by the data remain anonymous.
+- `Sentiment analysis`: To extract sentiment in a given string of text. Sentiment analysis, also called "opinion mining", uses natural language processing, text analysis and computational linguistics to identify and detect subjective information from the input text.
+- `Keyword extraction`: (also known as keyword detection or keyword analysis) is a text analysis technique that consists of automatically extracting the most important words and expressions in a text.
+- `Named Entity Recognition`: (also called entity identification or entity extraction) is an information extraction technique that automatically identifies named entities in a text and classifies them into predefined categories.
+- `Question answering`: Given a question, a set of documents, and some examples, the API generates an answer to the question based on the information in the set of documents. This is useful for question-answering applications on sources of truth, like company documentation or a knowledge base.
+- `Search`: allows you to do a semantic search over a set of documents. This means that you can provide a query, such as a natural language question or a statement, and the provided documents will be scored and ranked based on how semantically related they are to the input query.
+- `Summarization`: is the process of reducing a text to a shorter form while keeping the most important information.
+- `Syntax analysis`: consists principally in highlighting the structure of a text.
+- `Topic extraction`: Topic analysis is a Natural Language Processing (NLP) technique that allows us to automatically extract meaning from text by identifying recurrent themes or topics.
+- `Text generation`: is a subfield of Natural Language Processing (NLP). It leverages knowledge in computational linguistics and artificial intelligence to automatically generate natural language texts, which can satisfy certain communicative requirements.
+- `Anonymization`: intent is privacy protection. It is the process of removing personally identifiable information from text so that the people described by the data remain anonymous.
 
 ## Pricing
 
