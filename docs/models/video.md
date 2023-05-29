@@ -1,4 +1,4 @@
-# 🎥 Video analysis
+# Video analysis
 
 Apollo connects to a large number of Video analysis technologies from the best providers.
 
@@ -8,13 +8,13 @@ With Apollo, you can access to multiple Video analysis models. For each of those
 
 ### Subfeatures
 
-- Label detection : identify the objects, people, and other entities present in a video. It returns a list of labels, along with confidence scores indicating the likelihood that the label is accurate and the timestamps of each detected label.
+- `Label detection` : identify the objects, people, and other entities present in a video. It returns a list of labels, along with confidence scores indicating the likelihood that the label is accurate and the timestamps of each detected label.
 <!-- - Face detection : identify the faces present in a video. It returns the location and coordinates of each face, as well as any available metadata such as landmarks and poses if available. -->
-- Text detection : extract any text present in a video. It returns the location, size, and content of each piece of text.
-- Logo detection : identify logos present in a video. It returns the location and coordinates of each logo, along with the associated brand name if available.
-- Explicit content detection : detect whether a video contains explicit or inappropriate content. It returns a label indicating the category, along with a confidence score.
-  <!-- - Object tracking : track specific objects as they move throughout a video. It returns the location and size of the tracked object at each frame. -->
-  <!-- - Person tracking : track specific people as they move throughout a video. It returns the location and size of the tracked person at each frame with the timestamp. -->
+- `Text detection` : extract any text present in a video. It returns the location, size, and content of each piece of text.
+- `Logo detection` : identify logos present in a video. It returns the location and coordinates of each logo, along with the associated brand name if available.
+- `Explicit content detection` : detect whether a video contains explicit or inappropriate content. It returns a label indicating the category, along with a confidence score.
+- `Object tracking` : track specific objects as they move throughout a video. It returns the location and size of the tracked object at each frame.
+- `Person tracking` : track specific people as they move throughout a video. It returns the location and size of the tracked person at each frame with the timestamp.
 
 ## Pricing
 

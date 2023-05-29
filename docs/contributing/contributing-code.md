@@ -1,3 +1,5 @@
+# Development
+
 ### 📦 pre-commit config
 
 As an open source project, Apollo welcomes contributions from the community at large. This isn’t an exhaustive reference and is a living document subject to change as needed when the project formalizes any practice or pattern.

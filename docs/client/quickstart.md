@@ -1,3 +1,7 @@
+---
+sidebar_position: 0
+---
+
 # Getting Started
 
 Apollo has supportive integrations against a wide variety of platforms and tools.

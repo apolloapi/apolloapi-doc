@@ -1,22 +1,70 @@
 ---
-sidebar_position: 1
+sidebar_position: 0
 ---
 
-# 🧑‍🚀 Introduction
+# Introduction
 
 Let's discover **Apollo SDK in less than 2 minutes**.
 
-## Getting Started
+## Regression tests vs Automated pipelines
 
-Apollo user interface (UI) is designed for creating decision making workflows. With Apollo platform, you can perform no-code AI tasks using the best engines in the market. Apollo SDK is a cli toolkit for developers to build automation pipelines on their own. Automate anything with the toolkit, UI is releasing soon!
+Our library allows you to do three things:
 
-<!-- Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**. -->
+- Test model quality using our CLI tool
+- Build automated tasks or back-test existing ones
+- Detect real-time changes in data
 
-### What you'll need
+Apollo helps you tune LLM prompts systematically across many relevant test cases. By evaluating and comparing LLM outputs to build decision making workflows. Users can test prompt quality and catch regressions faster.
 
-- [Python](https://www.python.org/downloads/) version 3 or above:
+We give you access to a native user interface (UI) for super charging your experience, create automated workflows, develop data driven insights from real-time changes and test your models.
 
-## Show me an example of the SDK?
+### Evaluating prompt quality
+
+**With Apollo python library and CLI toolkit, you can:**
+
+- **Detecting real-time changes** in your data
+- Automating tasks against **image, video, audio or text**
+- Simplifying the process of **back-testing quality** for your AI models
+- Making sure your integration is robust, so you **never again have to worry about stuck/stale data or false-positives**
+- **Test multiple prompts** against predefined test cases
+- **Evaluate quality and catch regressions** by comparing LLM outputs side-by-side
+- **Speed up evaluations** with caching and concurrent tests
+- **Flag bad outputs automatically** by setting "expectations"
+- Use as a **command line tool, or integrate into your workflow with our library**
+- **Use any** AI provider, API or database under one API
+
+`apollo-sdk` produces table views that allow you to quickly review prompt outputs across many inputs. The goal: tune prompts systematically across all relevant test cases, instead of testing prompts by trial and error.
+
+#### Usage (command line)
+
+_Support for user interface as output type coming soon_
+
+**It works on the command line, you can output to [`json`, `csv`, `yaml`]:**
+
+![Prompt eval](https://github.com/apolloapi/apolloapi/assets/72639210/c65b4565-5d17-4b32-971c-d4a51d9d137e)
+To get started, run the following command:
+
+```
+apollo-sdk init
+```
+
+This will create some templates in your current directory: `prompts.txt`, `vars.csv`, and `config.json`.
+
+After editing the prompts and variables to your desired state, `apollo-sdk` command to kick off an prompt evaluation test:
+
+```
+apollo-sdk -p ./prompts.txt -v ./vars.csv -r openai:completion
+```
+
+If you're looking to customize your usage, you have a wide set of parameters at your disposal. See the [Configuration docs](https://docs.apolloapi.io/docs/cli/configuration) for more detail
+
+**Here's an example of a side-by-side comparison of multiple prompts and inputs. You can manually review outputs:**
+
+_set up for "expectations" that automatically flag bad outputs coming soon_
+
+![Prompt eval](https://uploads-ssl.webflow.com/640ca38ad086fde245b76c9d/647411b456031b5145019909_Screenshot%202023-05-28%20at%2010.44.48%20PM.png)
+
+### Building Automated Pipelines w/ Python Library
 
 In your code you can write:
 
@@ -37,20 +85,13 @@ Apollo.detectText('Phrase1', 'contains', 'UNKNOWN') # Text Analysis
 
 ```
 
-### Apollo then takes care of:
-
-- Detecting real-time changes in user experience
-- Automated detection against image, video, audio or text
-- Connecting policy to product
-- Making sure your integration is robust, so you never again have to worry about stuck/stale data or false-positives
-
 ### Cool, what can I build with it?
 
-- Trust & Safety teams in companies use Apollo to **build native in-app connections** related to active response, content moderation, fraud detection, etc.
-- Some **automate their personal lives** with Apollo by integrating against discord communities, or do other things. Checkout our [Features!](https://docs.apolloapi.io/docs/features)
-- Apollo can help you **quickly build trust** for hobby projects, communities or business
+- Apollo can help you **quickly automate tasks** for model management, performance, labeling, object detection and more.
+- Teams can use Apollo to **build native in-app connections** related to active response, content moderation, risk management, fraud detection, etc.
+- Some **automate their personal lives** with Apollo by integrating against discord communities or their personal lives
 
-[Let's try the SDK I want to build automation pipelines on my own!](https://docs.apolloapi.io/docs/api/quickstart)
+[Let's try the SDK I want to build automation pipelines on my own!](https://docs.apolloapi.io/docs/client/quickstart)
 
 You probably want to experience our no-code user interface (UI) beta. We're building other tools as well, want to self-host? Reach out to adrian@apolloapi.io
 

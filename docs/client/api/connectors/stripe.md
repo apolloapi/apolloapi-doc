@@ -1,4 +1,4 @@
-# Connections
+# Stripe provider
 
 Apollo gives you a way to extend your integrations beyond rest and database by integrating in with common platforms.
 

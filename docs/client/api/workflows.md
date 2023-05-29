@@ -1,4 +1,6 @@
-# Workflows & Rules
+# Automated Pipelines
+
+## Rules, Preset Rules and Filters
 
 Once you've created your **Content Types** and **Actions**, you're ready to create your first rule!
 
