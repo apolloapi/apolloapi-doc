@@ -69,20 +69,28 @@ _set up for "expectations" that automatically flag bad outputs coming soon_
 In your code you can write:
 
 ```python
-Apollo.connect('postgres://username:password@hostnam...', ...) # Starts syncing content forever!
+# import the package
+from apollo.client import Apollo
 
-Apollo.use('OpenAI', "moderation", ...) # Connect to existing providers!
+# Use any provider
+Apollo.use("google_perspective:<model name>", secret="YOUR_API_TOKEN_HERE")
 
-Apollo.rule('Phrase1', '>=', '0.8') # Create custom rules!
+# Lets check to see if a phrase contains threats
+Apollo.detectText(prompt="Phrase1", content_id="content-id", community_id="user-id")
+```
 
-Apollo.use('Apollo', "violence", ...) # Connect with our internal models!
+_Experimental inputs_:
 
-# Detect bad actors at scale!
+```python
+# Create custom rules which creates a task!
+Apollo.rule('Phrase1', '>=', '0.8')
+
+# https://docs.apolloapi.io/docs/features
 Apollo.detectImage('Image1', 'contains', 'VERY_LIKELY') # Image Analysis/OCR
 Apollo.detectSpeech('Audio1', 'contains', 'UNLIKELY') # Audio Processing
 Apollo.detectVideo('Video1', 'contains', 'POSSIBLE') # Video Analysis
 Apollo.detectText('Phrase1', 'contains', 'UNKNOWN') # Text Analysis
-
+Apollo.test('prompt', 'expected_output') # ML Validation
 ```
 
 ### Cool, what can I build with it?

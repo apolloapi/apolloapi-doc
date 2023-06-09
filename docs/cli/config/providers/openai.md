@@ -1,10 +1,10 @@
-# Providers
+# OpenAI
 
 Your connection to any AI Provider or third party app is called a connector.
 
-`apollo-sdk` supports OpenAI API models out of the box. To use a custom AI provider, create a custom module open an issue and we'll put some code together for you.
+`apollo-sdk` supports a wide range of models out of the box. To use a custom AI provider, create a custom module open an issue and we'll put some code together for you.
 
-### OpenAI
+### Notes
 
 To use the OpenAI API, set the `OPENAI_API_KEY` environment variable or pass the API key as an argument to the constructor.
 
