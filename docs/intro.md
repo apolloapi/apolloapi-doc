@@ -2,7 +2,7 @@
 sidebar_position: 0
 ---
 
-# Why Apollo AI?
+# Why Apollo API?
 
 Let's discover **Apollo SDK in less than 2 minutes**.
 
