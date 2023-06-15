@@ -1,4 +1,4 @@
-# Development
+# Contributing
 
 ### 📦 pre-commit config
 

@@ -149,3 +149,90 @@ You can also use `apollo` client as a library in your project by importing the `
 
 - **[Setting up an model test](https://docs.apolloapi.io)**: Learn more about how to set up prompt files, vars file, output, etc.
 <!-- - **[Configuring test cases]()**: Learn more about how to configure expected outputs and test assertions. -->
+
+### Building Automated Pipelines
+
+##### [View full documentation »](https://docs.apolloapi.io/)
+
+Let's setup your first Integration!
+
+It will pull from your local database (and keep it in sync).
+
+```python
+# import the package
+from apollo.client import Apollo
+
+# sync data from your database instance
+# (we support supabase at the current moment or postgresql via uri format)
+Apollo.connect("postgres://username:password@hostname:port/database_name")
+
+# If you want to test out operation on your external connection
+Apollo.fetch_tables()
+Apollo.query("desc", "table", "column")
+```
+
+...and create a workflow with a simple command:
+
+_Note: you can use our sandbox api and skip providing a token or obtain a Auth token [here](https://docs.apolloapi.io/docs/api/authentication), sign up today on our [Site](https://use.apolloapi.io/admin/)_
+
+```python
+# import the package
+from apollo.client import Apollo
+
+# Use any provider
+Apollo.use("google_perspective:<model name>", secret="YOUR_API_TOKEN_HERE")
+
+# Lets check to see if a phrase contains threats
+Apollo.detectText(prompt="Phrase1", content_id="content-id", community_id="user-id")
+```
+
+**Example response**:
+
+```json
+{
+  "attributeScores": {
+    "THREAT": {
+      "spanScores": [
+        {
+          "begin": 0,
+          "end": 12,
+          "score": { "value": 0.008090926, "type": "PROBABILITY" }
+        }
+      ],
+      "summaryScore": { "value": 0.008090926, "type": "PROBABILITY" }
+    },
+    "INSULT": {
+      "spanScores": [
+        {
+          "begin": 0,
+          "end": 12,
+          "score": { "value": 0.008804884, "type": "PROBABILITY" }
+        }
+      ],
+      "summaryScore": { "value": 0.008804884, "type": "PROBABILITY" }
+    },
+    "SPAM" // ...
+  },
+  "languages": ["en"],
+  "clientToken": "content_123",
+  "detectedLanguages": ["en", "fil"]
+}
+```
+
+_Experimental inputs_:
+
+```python
+# Create custom rules which creates a task!
+Apollo.rule('Phrase1', '>=', '0.8')
+
+# https://docs.apolloapi.io/docs/features
+Apollo.detectImage('Image1', 'contains', 'VERY_LIKELY') # Image Analysis/OCR
+Apollo.detectSpeech('Audio1', 'contains', 'UNLIKELY') # Audio Processing
+Apollo.detectVideo('Video1', 'contains', 'POSSIBLE') # Video Analysis
+Apollo.detectText('Phrase1', 'contains', 'UNKNOWN') # Text Analysis
+Apollo.test('prompt', 'expected_output') # ML Validation
+```
+
+That's all it takes!
+
+In practice, you probably want to use one of our native SDKs to interact with Apollo's API or use our custom browser client so you dont have to write code. If so, sign up at [Apollo API](https://use.apolloapi.io/admin/)!

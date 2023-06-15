@@ -9,7 +9,8 @@ const FeatureList = [
     description: (
       <>
         Aggregate multiple Large Language Models into one place through a single
-        API or connect and sync data from anywhere.
+        API or connect and sync data from anywhere. Catch regressions, detect
+        changes in your user experience.
       </>
     ),
   },
@@ -18,8 +19,9 @@ const FeatureList = [
     // Svg: "https://uploads-ssl.webflow.com/640ca38ad086fde245b76c9d/640ca38ad086fd8086b76dc3_icon-feature-6-saasly-template.svg",
     description: (
       <>
-        Backtest your strategy and improve sentiment analysis, text moderation
-        across Image, Video, Speech and Text.
+        Quality assurance for your automated systems, you can backtest your
+        strategy and improve sentiment analysis, text moderation across Image,
+        Video, Speech and Text.
       </>
     ),
   },

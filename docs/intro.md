@@ -2,7 +2,7 @@
 sidebar_position: 0
 ---
 
-# Introduction
+# Why Apollo AI?
 
 Let's discover **Apollo SDK in less than 2 minutes**.
 
@@ -42,58 +42,8 @@ _Support for user interface as output type coming soon_
 **It works on the command line, you can output to [`json`, `csv`, `yaml`]:**
 
 ![Prompt eval](https://github.com/apolloapi/apolloapi/assets/72639210/c65b4565-5d17-4b32-971c-d4a51d9d137e)
-To get started, run the following command:
 
-```
-apollo-sdk init
-```
-
-This will create some templates in your current directory: `prompts.txt`, `vars.csv`, and `config.json`.
-
-After editing the prompts and variables to your desired state, `apollo-sdk` command to kick off an prompt evaluation test:
-
-```
-apollo-sdk -p ./prompts.txt -v ./vars.csv -r openai:completion
-```
-
-If you're looking to customize your usage, you have a wide set of parameters at your disposal. See the [Configuration docs](https://docs.apolloapi.io/docs/cli/configuration) for more detail
-
-**Here's an example of a side-by-side comparison of multiple prompts and inputs. You can manually review outputs:**
-
-_set up for "expectations" that automatically flag bad outputs coming soon_
-
-![Prompt eval](https://uploads-ssl.webflow.com/640ca38ad086fde245b76c9d/647411b456031b5145019909_Screenshot%202023-05-28%20at%2010.44.48%20PM.png)
-
-### Building Automated Pipelines w/ Python Library
-
-In your code you can write:
-
-```python
-# import the package
-from apollo.client import Apollo
-
-# Use any provider
-Apollo.use("google_perspective:<model name>", secret="YOUR_API_TOKEN_HERE")
-
-# Lets check to see if a phrase contains threats
-Apollo.detectText(prompt="Phrase1", content_id="content-id", community_id="user-id")
-```
-
-_Experimental inputs_:
-
-```python
-# Create custom rules which creates a task!
-Apollo.rule('Phrase1', '>=', '0.8')
-
-# https://docs.apolloapi.io/docs/features
-Apollo.detectImage('Image1', 'contains', 'VERY_LIKELY') # Image Analysis/OCR
-Apollo.detectSpeech('Audio1', 'contains', 'UNLIKELY') # Audio Processing
-Apollo.detectVideo('Video1', 'contains', 'POSSIBLE') # Video Analysis
-Apollo.detectText('Phrase1', 'contains', 'UNKNOWN') # Text Analysis
-Apollo.test('prompt', 'expected_output') # ML Validation
-```
-
-### Cool, what can I build with it?
+### ML Validation & Automation via User Interface
 
 - Apollo can help you **quickly automate tasks** for model management, performance, labeling, object detection and more.
 - Teams can use Apollo to **build native in-app connections** related to active response, content moderation, risk management, fraud detection, etc.
@@ -103,9 +53,9 @@ Apollo.test('prompt', 'expected_output') # ML Validation
 
 You probably want to experience our no-code user interface (UI) beta. We're building other tools as well, want to self-host? Reach out to adrian@apolloapi.io
 
-![selfhosted](https://uploads-ssl.webflow.com/640ca38ad086fde245b76c9d/6452c0d5028530251de7b764_Screenshot%202023-05-03%20at%204.15.01%20PM.png)
+I want to use your [no-code UI!](https://use.apolloapi.io/admin/)
 
-I want to use your [no-code UI!](https://app.apolloapi.io)
+![selfhosted](https://uploads-ssl.webflow.com/640ca38ad086fde245b76c9d/648a9225388022dcf4f44ec8_Screenshot%202023-06-15%20at%2012.22.51%20AM.png)
 
 ## Neat, I would like to learn more
 

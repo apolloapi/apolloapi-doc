@@ -2,11 +2,24 @@
 sidebar_position: 0
 ---
 
-# Getting Started
+# Workflows
 
-Apollo has supportive integrations against a wide variety of platforms and tools.
+Once you've created your **Items** and **API Integrations**, you're ready to create your first workflow!
 
-## 🚀 Interesting, how can I try it?
+![rule](https://uploads-ssl.webflow.com/640ca38ad086fde245b76c9d/648a8d71388022dcf4eebcb8_Screenshot%202023-06-15%20at%2012.02.41%20AM.png)
+
+Workflows allow you to automate your Trust & Safety, compliance, model tuning, fraud and more. When you send us content, we run it through all of your Rules, and those Rules can trigger Actions.
+
+## How to Create a Workflow
+
+1. Navigate to the Rules tab
+2. Click on the workflow you want
+3. Enter a name, and optionally a description `If you're using our custom workflows engine`
+4. Select which Content Types your Rule should run on - `If you're using our custom workflows engine`. We'll only ever run this Rule if we receive content that fits one of the Content Types you selected. For preset rules create Content Types first.
+5. For `If you're using our custom workflows engine` - Construct your Rule's Conditions. Conditions are where the main logic of the Rule lives.
+6. Click "Enable"
+
+### Using the python library
 
 Lets install the SDK first...
 
@@ -92,27 +105,3 @@ Apollo.detectVideo('Video1', 'contains', 'POSSIBLE') # Video Analysis
 Apollo.detectText('Phrase1', 'contains', 'UNKNOWN') # Text Analysis
 Apollo.test('prompt', 'expected_output') # ML Validation
 ```
-
-## 🔌 Integrations
-
-We pre-built integrations with providers like:
-
-- Supabase
-- Postgresql
-- Firebase
-
-...We have a huge need for developing integrations with Mongodb, Mysql and more.
-
-To get involved checkout some of our issues [here!](https://github.com/apolloapi/apolloapi/issues)
-
-## 🧪 Clients
-
-Apollo has built in support for custom API calls via rest using `make_http_requests` & `make_http_request` methods.
-
-We are building the following:
-
-- Graphql
-- gRPC
-- XML formats
-
-You can find more on the implementation [here!](https://github.com/apolloapi/apolloapi/blob/main/apollo/service/)

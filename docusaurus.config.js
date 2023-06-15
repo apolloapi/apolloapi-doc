@@ -7,8 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Apollo Docs",
-  tagline:
-    "Evaluate and compare LLM outputs and build decision making workflows. Test prompt quality and catch regressions.",
+  tagline: "Open-source Machine Learning validation.",
   favicon: "img/docusaurus.png",
 
   // Set the production url of your site here
@@ -71,7 +70,7 @@ const config = {
         },
         items: [
           {
-            href: "https://github.com/apolloapi",
+            href: "https://github.com/apolloapi/apolloapi/",
             label: "GitHub",
             position: "right",
           },

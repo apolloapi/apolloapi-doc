@@ -1,4 +1,4 @@
-# Content API
+# Text API
 
 ## Sending Content to Apollo
 
@@ -79,9 +79,9 @@ These are the fields that we expect in the body of the request:
 
 These fields will be returned in every response:
 
-| Property              | Type   | Description                                                                                                                                                                                                                                           |
-| --------------------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| status                | Number | `status` indicates whether the request was successful: - `200` indicates that an asynchronous request was successful - `204` indicates that a synchronous request was successful - If an error occurs, `status` will contain the relevant error code. |
+| Property           | Type   | Description                                                                                                                                                                                                                                           |
+| ------------------ | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| status             | Number | `status` indicates whether the request was successful: - `200` indicates that an asynchronous request was successful - `204` indicates that a synchronous request was successful - If an error occurs, `status` will contain the relevant error code. |
 | data.workflowsRuns | Array  | This is a list of all the actions that Apollo triggered on this piece of content, based on the rules you've created in Apollo. If no action was triggered, this array will be empty.                                                                  |
 
 Note: This object is only returned for synchronous requests. To send a synchronous requests, simply add sync = true as a parameter in the body of your POST request.
