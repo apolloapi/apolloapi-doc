@@ -4,19 +4,19 @@ sidebar_position: 0
 
 # Why Apollo API?
 
-Let's discover **Apollo SDK in less than 2 minutes**.
-
-## Regression tests vs Automated pipelines
+Apollo helps you fine-tune AI systems systematically across many relevant test cases. By evaluating and comparing outputs to build decision making workflows. Users can test quality and catch regressions faster.
 
 Our library allows you to do three things:
 
-- Test model quality using our CLI tool
+- Performance benchmarks for AI systems against specific outcomes
 - Build automated tasks or back-test existing ones
 - Detect real-time changes in data
 
-Apollo helps you tune LLM prompts systematically across many relevant test cases. By evaluating and comparing LLM outputs to build decision making workflows. Users can test prompt quality and catch regressions faster.
+You have access to a user interface (UI) and python library for fine-tuning your AI systems for specific use-cases, creating automated workflows and developing data driven insights from real-time changes in your data sets.
 
-We give you access to a native user interface (UI) for super charging your experience, create automated workflows, develop data driven insights from real-time changes and test your models.
+## Regression tests vs Automated pipelines
+
+Let's discover **Apollo SDK in less than 2 minutes**.
 
 ### Evaluating prompt quality
 
