@@ -72,6 +72,11 @@ Example Request and Response
 Here is an example of the request and response when using the `Analyze` model:
 \*Suggest model coming soon.
 
+- Python:
+```python
+Apollo.detectText(prompt="Phrase", community_id="user", content_id="content_uuid")
+```
+
 - Request:
 
 ```json
