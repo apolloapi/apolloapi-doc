@@ -10,6 +10,15 @@ Changelog: https://github.com/apolloapi/apolloapi/releases
 
 ### Activity
 
+06/26/23
+
+#### What's Changed
+* dev: replace existing license with Apache License by @kd-kinuthiadavid in https://github.com/apolloapi/apolloapi/pull/72
+* dev: update README.md by @cloudguruab in https://github.com/apolloapi/apolloapi/pull/74
+* dev: convert text, operator and threshold positional args to kwargs by @kd-kinuthiadavid in https://github.com/apolloapi/apolloapi/pull/73
+
+**Full Changelog**: https://github.com/apolloapi/apolloapi/compare/v0.2.10...v.0.3.0
+
 06/04/23
 
 - dev: working on cli toolkit by @cloudguruab in https://github.com/apolloapi/apolloapi/pull/42
