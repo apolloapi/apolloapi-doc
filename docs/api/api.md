@@ -17,8 +17,8 @@ Here's an example of the body of a POST request that we'd send to your API durin
 ```json
 {
   "content": {
-    "id": "035e66eaf79",
-    "content_type": "0d45dc11733393648"
+    "id": "035e66eaf79", // uuid for the content itself
+    "content_type": "0d45dc11733393648" // uuid for the content type
   },
   "custom": {
     // ... any custom parameters that you configured in the Integrations dashboard
