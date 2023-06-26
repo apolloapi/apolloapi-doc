@@ -44,7 +44,7 @@ data = {
   'sync': True # NOTE: only include this if you want the content processed synchronously [default]
 }
 response = requests.post(
-  'https://api.apolloapi.com/api/v1/content',
+  'https://api.apolloapi.com/api/v1/content/',
   headers=headers,
   json=data
 )
@@ -55,16 +55,16 @@ These are the fields that we expect in the body of the request:
 
 | Property    | Type   | Description                                                                                                                                                                                                                                                                                                                                                           |
 | :---------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| content_id  | String | Your unique identifier for this piece of content. Every time we send you an HTTP request to trigger an Action, we'll include this `contentId` as a parameter so you know on which content you should execute the Action.                                                                                                                                              |
-| user_id     | String | Your unique identifier for the user who created this content. Every time we send you an HTTP request to trigger an Action, we'll include this `userId` as a parameter so you know on which user you should execute the Action.                                                                                                                                        |
+| content_id  | String | Your unique identifier for this piece of content. Every time we send you an HTTP request to trigger an Action, we'll include this `content_id` as a parameter so you know on which content you should execute the Workflow Run.                                                                                                                                              |
+| user_id     | String | Your unique identifier for the user who created this content. Every time we send you an HTTP request to trigger an Action, we'll include this `user_id` as a parameter so you know on which user you should execute the Workflow Run.                                                                                                                                        |
 | contenttype | String | The name of the Content Type that corresponds to the content you're sending. This should exactly match one of the Content Type names that you defined in the Content Types Dashboard.                                                                                                                                                                                 |
-| content     | JSON   | This is a JSON containing the content itself. In the Content Types Dashboard, you defined a schema for each Content Type. This content JSON must contain the fields you defined in the corresponding `contenttype`'s schema. We'll return an error if any of the required fields are missing, if any of the types mismatch, or if any additional fields are included. |
+| content     | JSON   | This is a JSON containing the content itself. In the Items Dashboard, you defined a schema for each Content Type. This content JSON must contain the fields you defined in the corresponding `contenttype`'s schema. We'll return an error if any of the required fields are missing, if any of the types mismatch, or if any additional fields are included. |
 
 ## Example Response
 
 ```python
 {
-    "content_id": "dbkrYDUzxs0BKcJXndTuasd",
+    "content_id": "dbkrYDUzcJXndTuasd",
     # The `data` object is only returned in synchronous requests
     "data": {
         "workflowsRuns": [
