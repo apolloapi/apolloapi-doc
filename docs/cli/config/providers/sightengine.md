@@ -74,6 +74,60 @@ curl -X GET -G 'https://api.sightengine.com/1.0/check.json' \
 Response:
 
 ```json
-{'status': 'success', 'request': {'id': 'req_id', 'timestamp': 1687741008.584207, 'operations': 6}, 'weapon': 0.88, 'alcohol': 0.01, 'drugs': 0.01, 'scam': {'prob': 0.01}, 'faces': [], 'nudity': {'sexual_activity': 0.01, 'sexual_display': 0.01, 'erotica': 0.01, 'suggestive': 0.01, 'suggestive_classes': {'bikini': 0.01, 'cleavage': 0.01, 'male_chest': 0.01, 'lingerie': 0.01, 'miniskirt': 0.01}, 'none': 0.98}, 'offensive': {'prob': 0.01, 'nazi': 0.01, 'confederate': 0.01, 'supremacist': 0.01, 'terrorist': 0.01, 'middle_finger': 0.01}, 'text': {'profanity': [], 'personal': [], 'link': [], 'social': [], 'extremism': [], 'medical': [], 'drug': [], 'weapon': [], 'ignored_text': False}, 'gore': {'prob': 0.01}, 'media': {'id': 'media_id', 'uri': 'https://sightengine.com/assets/img/examples/example-tt-1000.jpg'}}
+{
+    "status": "success",
+    "request": {
+        "id": "req_id",
+        "timestamp": 1687741008.584207,
+        "operations": 6
+    },
+    "weapon": 0.88,
+    "alcohol": 0.01,
+    "drugs": 0.01,
+    "scam": {
+        "prob": 0.01
+    },
+    "faces": [],
+    "nudity": {
+        "sexual_activity": 0.01,
+        "sexual_display": 0.01,
+        "erotica": 0.01,
+        "suggestive": 0.01,
+        "suggestive_classes": {
+            "bikini": 0.01,
+            "cleavage": 0.01,
+            "male_chest": 0.01,
+            "lingerie": 0.01,
+            "miniskirt": 0.01
+        },
+        "none": 0.98
+    },
+    "offensive": {
+        "prob": 0.01,
+        "nazi": 0.01,
+        "confederate": 0.01,
+        "supremacist": 0.01,
+        "terrorist": 0.01,
+        "middle_finger": 0.01
+    },
+    "text": {
+        "profanity": [],
+        "personal": [],
+        "link": [],
+        "social": [],
+        "extremism": [],
+        "medical": [],
+        "drug": [],
+        "weapon": [],
+        "ignored_text": False
+    },
+    "gore": {
+        "prob": 0.01
+    },
+    "media": {
+        "id": "media_id",
+        "uri": "https: sightengine.com/assets/img/examples/example-tt-1000.jpg"
+    }
+}
 ```
 
