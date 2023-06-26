@@ -10,7 +10,7 @@ sidebar_position: 1
 
 Apollo API requires a Bearer authentication (also called token authentication) when interacting with the SDK or sending us content at `content/`. You can access to your API token on the [settings page](https://use.apolloapi.io/admin).
 
-![settings](https://uploads-ssl.webflow.com/640ca38ad086fde245b76c9d/6452b1456257dc496c179599_Screenshot%202023-05-03%20at%203.08.40%20PM.png)
+<img width="1438" alt="Screenshot 2023-06-26 at 12 34 27 AM" src="https://github.com/apolloapi/apolloapi-doc/assets/72639210/c3dfcba8-c743-495f-b5d8-ac9f0ab1731c">
 
 You need to write the API key in headers in this format:
 
